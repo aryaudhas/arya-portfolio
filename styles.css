@@ -410,7 +410,7 @@ a { color: inherit; text-decoration: none; }
 
 .facts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   margin: 0;
   background: var(--line);
@@ -720,7 +720,7 @@ html.js .reveal.is-visible {
   .nav-links { font-size: 0.68rem; gap: 0.95rem; }
   html { scroll-padding-top: 70px; }
   .doodle--ball { width: 34px; right: 1%; bottom: 0.6rem; }
-  .facts { rotate: 0deg; }
+  .facts { grid-template-columns: 1fr; rotate: 0deg; }
   .card:nth-child(n) { rotate: 0deg; }
 }
 
