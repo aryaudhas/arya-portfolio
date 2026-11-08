@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arya Udhas — Computer Engineering @ Queen's</title>
+  <meta name="description" content="Arya Udhas — Computer Engineering student at Queen's University. Embedded systems, PX4 flight control, and the software on top: ROS 2, C++, machine learning." />
+  <meta name="theme-color" content="#f7f0e3" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f7f0e3'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='26' fill='%231e2a44' text-anchor='middle'%3EAU%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- spider, quietly descending in the corner -->
+  <div class="doodle doodle--web" aria-hidden="true">
+    <svg viewBox="0 0 210 210" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+      <g opacity="0.4">
+        <path d="M210 0 L210 74 M210 0 L150 16 M210 0 L158 52 M210 0 L120 40 M210 0 L176 86" />
+        <path d="M210 26 Q 176 30 172 66" />
+        <path d="M210 48 Q 190 52 188 84" />
+        <path d="M210 70 Q 198 74 196 96" />
+      </g>
+      <g class="spider">
+        <path d="M150 60 L150 100" stroke-dasharray="3 4" opacity="0.5" />
+        <ellipse cx="150" cy="111" rx="7" ry="9" fill="currentColor" stroke="none" />
+        <circle cx="150" cy="101" r="3.4" fill="currentColor" stroke="none" />
+        <path d="M144 106 L134 100 M144 111 L133 110 M145 116 L135 122 M147 120 L140 130
+                 M156 106 L166 100 M156 111 L167 110 M155 116 L165 122 M153 120 L160 130" />
+      </g>
+    </svg>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="brand-mark">AU</span>
+        <span class="brand-text">Arya Udhas</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Computer Engineering · Queen's University</p>
+
+        <h1 aria-label="Arya Udhas">
+          <span class="typed" id="typed" aria-hidden="true">Arya Udhas</span><span class="caret" aria-hidden="true"></span>
+        </h1>
+
+        <p class="lede">
+          I work on embedded systems — flight controllers, sensor and radio calibration,
+          the protection circuitry that keeps a high-voltage bus safe — and then, once the
+          hardware behaves itself, the software that ties it all together.
+        </p>
+
+        <ul class="chips" aria-label="Focus areas">
+          <li>Embedded systems</li>
+          <li>Flight control · PX4</li>
+          <li>UAV / VTOL</li>
+          <li>Software</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/Arya_Udhas_Resume.docx" download>
+            Download résumé
+            <span aria-hidden="true">↓</span>
+          </a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- taped index card -->
+      <aside class="note-card" aria-hidden="true">
+        <p class="note-head">field notes</p>
+        <p class="note-line"><span class="note-k">whoami</span> arya — 2nd year computer engineering</p>
+        <p class="note-line"><span class="note-k">focus</span> uav / vtol · ros 2 · embedded · ml</p>
+        <p class="note-line"><span class="note-k">since</span> building autonomous flight, 2026</p>
+        <p class="note-foot">— kingston, ontario</p>
+      </aside>
+    </section>
+
+    <svg class="squiggle container" viewBox="0 0 240 12" aria-hidden="true">
+      <path d="M2 8 Q 20 2 38 8 T 74 8 T 110 8 T 146 8 T 182 8 T 218 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    </svg>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="section-label">01 — About</p>
+        <h2>Engineering, end to end.</h2>
+      </div>
+
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a second-year Computer Engineering student at Queen's University in Kingston,
+          Ontario. Most of what I do is embedded: calibrating a VTOL airframe on a PX4
+          flight controller, designing the protection circuitry that keeps a high-voltage
+          bus safe, and getting sensors and radios to agree with each other. Then comes the
+          software — ROS&nbsp;2 nodes in Docker, MATLAB/Simulink flight models, and
+          computer-vision pipelines. I like working both ends: the part that touches metal,
+          and the part that tells it what to do.
+        </p>
+
+        <dl class="facts reveal">
+          <div><dt>GPA</dt><dd>3.7</dd></div>
+          <div><dt>Year</dt><dd>2nd</dd></div>
+          <div><dt>Based in</dt><dd>Kingston, ON</dd></div>
+          <div><dt>Graduating</dt><dd>2029</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section container" id="experience">
+      <div class="section-head reveal">
+        <p class="section-label">02 — Experience</p>
+        <h2>Design teams &amp; work</h2>
+      </div>
+
+      <h3 class="group-title reveal">Engineering Design Teams</h3>
+      <ol class="timeline">
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Queen's Aerospace Design Team</h4>
+            <p class="entry-role">Software Team — UAV / VTOL</p>
+            <p class="entry-date">Sep 2026 — Present</p>
+          </div>
+          <ul class="bullets">
+            <li>Calibrated the RC transmitter and VTOL airframe on a PX4 flight controller via QGroundControl — accelerometer, gyroscope, magnetometer, ESC and radio channel mapping — for stable multicopter-to-fixed-wing transitions.</li>
+            <li>Developing a MATLAB/Simulink flight dynamics simulation of a drone flying a loop manoeuvre, modelling pitch/attitude PID control and thrust limits to validate the trajectory before flight testing.</li>
+            <li>Engineering autonomous-to-manual control handover (and back) triggered by button release, interfacing an Arduino Nano with PX4 flight-mode switching and RC override over MAVLink, with failsafe fallback.</li>
+            <li>Running software-in-the-loop testing in Gazebo with ROS 2 nodes in Docker containers; configuring telemetry links and analysing flight logs to debug control and comms issues.</li>
+          </ul>
+        </li>
+
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Queen's Hyperloop Design Team</h4>
+            <p class="entry-role">Hardware Team</p>
+            <p class="entry-date">Sep 2026 — Present</p>
+          </div>
+          <ul class="bullets">
+            <li>Designing high- and low-voltage power electronics: capacitor banks for energy storage and ripple smoothing, and inductors for filtering and current limiting in the motor-drive stage.</li>
+            <li>Implementing failsafe and protection circuitry — fuses, contactors/relays, pre-charge, emergency-stop shutdown, over-current and over-voltage protection — to isolate the high-voltage bus under fault.</li>
+            <li>Contributing to the maglev subsystem: electromagnet coil drive hardware, air-gap sensing for levitation stability, and bench testing.</li>
+          </ul>
+        </li>
+
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Formula SAE Team</h4>
+            <p class="entry-role">Low Voltage Technician</p>
+            <p class="entry-date">Sep 2025 — May 2026</p>
+          </div>
+          <ul class="bullets">
+            <li>Collaborated with the electrical sub-team to design and review PCB layouts for vehicle low-voltage systems, accounting for reliability and safety under competition conditions.</li>
+            <li>Tested, debugged and validated PCB designs; supported integration with mechanical and firmware subsystems during system troubleshooting.</li>
+          </ul>
+        </li>
+
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>High Performance Computing Club</h4>
+            <p class="entry-role">Member — parallel &amp; high-performance computing</p>
+            <p class="entry-date">Sep 2026 — Present</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="group-title reveal">Work</h3>
+      <ol class="timeline">
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Queen's University Library</h4>
+            <p class="entry-role">Collection &amp; Maintenance Assistant — Kingston</p>
+            <p class="entry-date">Jan 2026 — Present</p>
+          </div>
+          <ul class="bullets">
+            <li>Maintain accuracy of collection records across multiple campus locations through shelf-reading, material processing and large-scale collection shifts.</li>
+            <li>Independently resolve cataloguing and material discrepancies while coordinating with staff in a high-traffic environment.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <p class="section-label">03 — Projects</p>
+        <h2>Things I've built</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <p class="card-kicker">Jan — Apr 2026 · Lead</p>
+          <h3>AI Cognitive Assistance</h3>
+          <p>An assistant for users with cognitive decline, pairing LLM APIs with a computer-vision pipeline for context-aware, personalised support.</p>
+          <ul class="card-list">
+            <li>Image segmentation infers user actions and surroundings, passing structured scene data to the LLM layer.</li>
+            <li>ML-driven personalisation adapts assistance to individual behaviour.</li>
+          </ul>
+          <p class="tags"><span>LLM APIs</span><span>Computer Vision</span><span>Segmentation</span></p>
+        </article>
+
+        <article class="card reveal">
+          <p class="card-kicker">Python · OpenCV · MediaPipe</p>
+          <h3>Sign Language Detection</h3>
+          <p>Real-time gesture recognition: hand landmarks extracted from webcam frames, classified by a supervised model at 75% accuracy on an initial dataset.</p>
+          <ul class="card-list">
+            <li>Built the full pipeline — collection, preprocessing, feature extraction, training, evaluation, live inference.</li>
+            <li>Next: dataset expansion and motion-tracked glove sensors for more robust tracking.</li>
+          </ul>
+          <p class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>ML</span></p>
+        </article>
+
+        <article class="card reveal">
+          <p class="card-kicker">Sep — Dec 2025 · Team Lead</p>
+          <h3>APSC 101 Design Project</h3>
+          <p>Led a multidisciplinary team through the full design lifecycle: planning, delegation by strengths, milestone tracking and technical decisions.</p>
+          <ul class="card-list">
+            <li>Authored ~15-page weekly technical reports.</li>
+          </ul>
+          <p class="tags"><span>Leadership</span><span>Technical Writing</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section container" id="education">
+      <div class="section-head reveal">
+        <p class="section-label">04 — Education</p>
+        <h2>Where I've studied</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Queen's University</h4>
+            <p class="entry-role">B.A.Sc. Computer Engineering · Kingston, Ontario</p>
+            <p class="entry-date">Expected Apr 2029</p>
+          </div>
+          <ul class="bullets">
+            <li>Second year · GPA 3.7</li>
+            <li>ECE Night 2026 — First Year Champion</li>
+          </ul>
+        </li>
+
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Arya Gurukul International Jr College of Arts and Science</h4>
+            <p class="entry-role">Mumbai, India</p>
+            <p class="entry-date">May 2025</p>
+          </div>
+          <ul class="bullets">
+            <li>Governor's Gold Medal — average of 90% or more</li>
+          </ul>
+        </li>
+
+        <li class="entry reveal">
+          <div class="entry-dot" aria-hidden="true"></div>
+          <div class="entry-head">
+            <h4>Hiranandani Foundation School</h4>
+            <p class="entry-role">Mumbai, India</p>
+            <p class="entry-date">May 2023</p>
+          </div>
+          <ul class="bullets">
+            <li>Grade average: 98%</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+      <!-- tennis ball, bouncing off the section edge -->
+      <div class="doodle doodle--ball" aria-hidden="true">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="19" fill="#e8d273" stroke="#1e2a44" stroke-width="1.8" />
+          <path d="M7 17 Q 24 28 41 15" fill="none" stroke="#1e2a44" stroke-width="1.5" />
+          <path d="M8 33 Q 24 22 40 34" fill="none" stroke="#1e2a44" stroke-width="1.5" />
+        </svg>
+      </div>
+
+      <div class="section-head reveal">
+        <p class="section-label">05 — Skills</p>
+        <h2>The toolkit</h2>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-block reveal">
+          <h3>Programming &amp; ML</h3>
+          <p class="tags">
+            <span>Python</span><span>C++</span><span>MATLAB / Simulink</span>
+            <span>Supervised learning</span><span>Feature extraction</span>
+            <span>Model training</span><span>OpenCV</span><span>MediaPipe</span>
+            <span>Image segmentation</span><span>LLM APIs</span>
+          </p>
+        </div>
+
+        <div class="skill-block reveal">
+          <h3>Robotics &amp; Embedded</h3>
+          <p class="tags">
+            <span>PX4</span><span>QGroundControl</span><span>MAVLink</span>
+            <span>ROS 2</span><span>Gazebo (SITL)</span><span>Docker</span>
+            <span>Arduino</span><span>Telemetry</span><span>PID control</span>
+          </p>
+        </div>
+
+        <div class="skill-block reveal">
+          <h3>Hardware &amp; Design</h3>
+          <p class="tags">
+            <span>PCB design</span><span>Power electronics</span><span>Motor drives</span>
+            <span>Circuit protection</span><span>Fusion 360</span><span>Canva</span>
+          </p>
+        </div>
+
+        <div class="skill-block reveal">
+          <h3>Currently learning</h3>
+          <p class="tags">
+            <span>Computer system architecture</span><span>OS kernel internals</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <svg class="squiggle container" viewBox="0 0 240 12" aria-hidden="true">
+      <path d="M2 8 Q 20 2 38 8 T 74 8 T 110 8 T 146 8 T 182 8 T 218 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    </svg>
+
+    <!-- CONTACT -->
+    <section class="section container contact" id="contact">
+      <div class="section-head reveal">
+        <p class="section-label">06 — Contact</p>
+        <h2>Let's build something.</h2>
+      </div>
+
+      <div class="contact-grid reveal">
+        <a class="contact-card" href="mailto:aryaudhas@gmail.com">
+          <span class="contact-label">Personal</span>
+          <span class="contact-value">aryaudhas@gmail.com</span>
+        </a>
+        <a class="contact-card" href="mailto:24cv44@queensu.ca">
+          <span class="contact-label">University</span>
+          <span class="contact-value">24cv44@queensu.ca</span>
+        </a>
+        <a class="contact-card" href="tel:+13434228048">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">(343) 422-8048</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Kingston, Ontario</span>
+        </div>
+      </div>
+
+      <button class="copy-btn" type="button" data-copy="aryaudhas@gmail.com">
+        <span class="copy-text">Copy email</span>
+      </button>
+
+      <!-- paper plane leaving the page -->
+      <div class="doodle doodle--plane" aria-hidden="true">
+        <svg viewBox="0 0 60 44">
+          <path d="M3 21 L56 4 L36 36 L27 25 Z" fill="#f6c9b8" stroke="#1e2a44" stroke-width="1.7" stroke-linejoin="round" />
+          <path d="M27 25 L56 4" fill="none" stroke="#1e2a44" stroke-width="1.5" />
+          <path d="M27 25 L26 36" fill="none" stroke="#1e2a44" stroke-width="1.5" stroke-dasharray="3 3" />
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year">2026</span> Arya Udhas</p>
+    <p class="footer-meta">hand-written HTML · CSS · a little JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
